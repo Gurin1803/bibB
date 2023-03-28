@@ -1,0 +1,80 @@
+body{
+    background-image: url(fond.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:rgb(238, 212, 63);
+    font-family: "MaPolice";
+    letter-spacing: 2px;
+}
+
+@font-face {
+    font-family: "MaPolice";
+    src: url("Starjout.ttf");
+  }
+
+h1{
+    text-align:center;
+    font-size:70px;
+}
+
+#titre{
+    display: flex;
+    width:100%;
+    justify-content:space-around;
+}
+
+.artifice{
+    width:150px;
+    height:150px;
+}
+
+#intro{
+    width:100%;
+    text-align:center;
+    font-size: 40px;
+}
+
+.img-bloc{
+    margin-top:50px;
+    height:400px;
+    width:500px;
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.img-bloc:hover{
+    transition: 0.5s;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+#container{
+    display:flex;
+    justify-content:space-around;
+}
+p{
+    width:500px;
+    font-size:30px;
+    text-align: justify;
+}
+
+hr{
+    color:white;
+    margin-top:100px;
+}
+#qui{
+    width:100%;
+    margin-top:100px;
+    text-align:center;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 480px) {
+    #container{
+        flex-wrap:wrap;
+    }
+  }
